@@ -1,0 +1,149 @@
+.photos{
+  width:83%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    border-top: 1px solid grey;
+
+    &-btn{
+      padding: 5px 15px;
+      background: #e1e3e6;
+      border-radius: 10px;
+      border: none;
+      color: black;
+
+      &:hover{
+        opacity: .5;
+      }
+
+      &:active{
+        transform: scale(0.97);
+      }
+    }
+  }
+
+  &__album{
+    padding: 20px 20px;
+    width: 100%;
+    background:#222222;
+    border-radius: 10px;
+    border: 2px solid #424242;
+  }
+
+  &__gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    justify-content: center;
+
+
+    &-close{
+      background: #555555;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+      right: 10px;
+      font-size: 25px;
+      color: black;
+      font-weight: 900;
+
+
+      &:hover{
+        color: white;
+        background: red;
+      }
+
+    }
+
+    &-desc{
+      border-radius: 0 0 10px 10px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      text-align: center;
+      border-top: 1px solid grey;
+    }
+
+    &-desc{
+      width: 100%;
+      height: 15%;
+    }
+
+    &-box{
+      position: relative;
+      width: calc(33% - 13.33333px);
+      height: 280px;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid grey;
+    }
+
+    &-img{
+      object-fit: cover;
+      width: 100%;
+      height: 85%;
+    }
+  }
+
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+
+    &-gallery{
+      height: 350px;
+    }
+  }
+
+  &__title{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__add-btn{
+    padding: 5px 15px;
+    background: #e1e3e6;
+    border-radius: 10px;
+    border: none;
+    color: black;
+
+    &:hover{
+      opacity: .5;
+    }
+
+    &:active{
+      transform: scale(0.97);
+    }
+  }
+
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__empty{
+    text-align: center;
+    color: #b2b2b2;
+    margin-top: 30px ;
+  }
+}

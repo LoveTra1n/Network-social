@@ -1,0 +1,30 @@
+.aside{
+  display: flex;
+  flex-direction: column;
+  padding: 0 6px;
+  width: 15%;
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 0 0 -15px;
+    border-radius: 10px;
+
+    &:hover{
+      background: #333333;
+    }
+  }
+
+  &__icon{
+    font-size: 25px;
+    color: red;
+  }
+}

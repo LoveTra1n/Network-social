@@ -1,0 +1,62 @@
+.find{
+  width: 100%;
+  display: flex;
+  column-gap: 15px;
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle{
+    font-size: 17px;
+  }
+
+  &__more{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+
+  &__people{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0;
+  }
+
+  &__card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: calc(33% - 20px);
+    overflow: hidden;
+
+    &-img{
+      cursor: pointer;
+      width: 100%;
+      border-radius: 10px;
+
+      &:hover{
+        opacity: .7;
+      }
+
+    }
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    &-name{
+      font-size: 15px;
+    }
+  }
+}

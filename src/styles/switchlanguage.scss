@@ -1,0 +1,32 @@
+.switchLangs {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 76px;
+  border: 2px solid #424242;
+  border-radius: 8px;
+  background: #333333;
+  overflow: hidden;
+}
+
+.switchLangBtn {
+  width: 36px;
+  height: 30px;
+  transition: all 0.2s;
+  color: #828282;
+  border-radius: 5px;
+  background: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.switchLangBtn.active {
+  color: white;
+  border-radius: 6px;
+  background: #424242;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+}
